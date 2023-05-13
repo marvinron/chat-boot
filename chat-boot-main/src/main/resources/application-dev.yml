@@ -1,0 +1,20 @@
+#服务配置
+server:
+  port: 7001
+  max-http-header-size: 10240
+
+# mybatisplus 配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://bj-cdb-3sukricm.sql.tencentcdb.com:60421/alliance_sit_db?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&nullCatalogMeansCurrent=true
+    username: root
+    password: Gameley668
+  redis:
+    host: bj-crs-evk1h6lo.sql.tencentcdb.com
+    port: 27531
+    password: Gameley668
